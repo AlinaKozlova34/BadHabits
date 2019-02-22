@@ -4,10 +4,10 @@
     <string name="dev_name">PADev.PRO</string>
     <string name="nav_header_desc">Navigation header</string>
 
-
     <string name="notifications">Уведомления</string>
     <string name="settings">Настройки</string>
     <string name="about">О приложении</string>
+    <string name="habit_add">Добавить привычку</string>
 
     <string name="default_habit">Привычка</string>
 

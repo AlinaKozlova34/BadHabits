@@ -122,7 +122,7 @@ class HomeActivity: BaseActivity(), IHomeView {
 
     override fun showAddHabitDialog() {
 
-        val promptsView = layoutInflater.inflate(R.layout.input_alert_add_habit, null)
+        /*val promptsView = layoutInflater.inflate(R.layout.input_alert_add_habit, null)
 
         val alertDialogBuilder = AlertDialog.Builder(this)
 
@@ -152,6 +152,9 @@ class HomeActivity: BaseActivity(), IHomeView {
         val alertDialog = alertDialogBuilder.create()
 
         alertDialog.show()
+        */
+
+        startActivity(Intent(this, HabitAddActivity::class.java))
     }
 
 
