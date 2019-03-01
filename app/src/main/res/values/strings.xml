@@ -9,6 +9,20 @@
     <string name="about">О приложении</string>
     <string name="habit_add">Добавить привычку</string>
 
+    <string name="habit_add_smoke">Табакокурение</string>
+    <string name="habit_add_alcoholism">Алкоголизм</string>
+    <string name="habit_add_junk_food">Вредная еда</string>
+    <string name="habit_add_gambling_addiction">Игромания</string>
+    <string name="habit_add_foul_language">Сквернословие</string>
+    <string name="habit_add_shoping">Шопоголизм</string>
+    <string name="habit_add_laziness">Лень</string>
+    <string name="habit_add_lie">Ложь</string>
+    <string name="habit_add_unnecessary_things">Захломленье</string>
+    <string name="habit_add_unnecessary_things_long">Привычка хранить не нужные вещи</string>
+    <string name="habit_add_nail_biting">Онихофагия</string>
+    <string name="habit_add_nail_biting_long">Привычка грызть ногти</string>
+    <string name="habit_add_other">Дугое</string>
+
     <string name="default_habit">Привычка</string>
 
     <string name="drawer_item_notification">Уведомления</string>

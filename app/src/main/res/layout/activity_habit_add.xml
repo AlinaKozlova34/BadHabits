@@ -59,43 +59,157 @@
                     android:layout_gravity="center"
                     android:visibility="gone" />
 
-                <android.support.design.widget.TextInputLayout
-                    android:id="@+id/activity_add_habit_name_til"
+                <RadioGroup
+                    android:id="@+id/activity_habit_add_radio_group"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-                    <EditText
-                        android:id="@+id/activity_add_habit_name"
+                    <RadioButton
+                        android:id="@+id/activity_habit_add_radio_button_smoke"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="@string/habit_name">
+                        android:text="@string/habit_add_smoke" />
 
-                        <requestFocus />
-                    </EditText>
-                </android.support.design.widget.TextInputLayout>
+                    <RadioButton
+                        android:id="@+id/activity_habit_add_radio_button_alcoholism"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/habit_add_alcoholism" />
 
-                <CheckBox
-                    android:id="@+id/activity_add_habit_time"
+                    <RadioButton
+                        android:id="@+id/activity_habit_add_radio_button_junk_food"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/habit_add_junk_food" />
+
+                    <RadioButton
+                        android:id="@+id/activity_habit_add_radio_button_gambling_addiction"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/habit_add_gambling_addiction" />
+
+                    <RadioButton
+                        android:id="@+id/activity_habit_add_radio_button_foul_language"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/habit_add_foul_language" />
+
+                    <RadioButton
+                        android:id="@+id/activity_habit_add_radio_button_shopaholism"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/habit_add_shoping" />
+
+                    <RadioButton
+                        android:id="@+id/activity_habit_add_radio_button_laziness"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/habit_add_laziness" />
+
+                    <RadioButton
+                        android:id="@+id/activity_habit_add_radio_button_lie"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/habit_add_lie" />
+
+                    <RadioButton
+                        android:id="@+id/activity_habit_add_radio_button_unnecessary_things"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/habit_add_unnecessary_things" />
+                    
+                    <TextView
+                        android:id="@+id/activity_habit_add_text_view_unnecessary_things_long"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/habit_add_unnecessary_things_long"
+                        android:visibility="gone" />
+
+
+                    <RadioButton
+                        android:id="@+id/activity_habit_add_radio_button_nail_biting"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/habit_add_nail_biting" />
+
+                    <TextView
+                        android:id="@+id/activity_habit_add_text_view_nail_biting_long"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/habit_add_nail_biting_long"
+                        android:visibility="gone" />
+
+                    <RadioButton
+                        android:id="@+id/activity_habit_add_radio_button_other"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/habit_add_other" />
+
+                </RadioGroup>
+
+                <LinearLayout
+                    android:id="@+id/activity_habit_add_layout_other"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    android:text="@string/habit_danger_time" />
+                    android:visibility="gone" >
 
-                <CheckBox
-                    android:id="@+id/activity_add_habit_money"
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    android:text="@string/habit_danger_money" />
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/activity_add_habit_name_til"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
 
-                <CheckBox
-                    android:id="@+id/activity_add_habit_health"
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    android:text="@string/habit_danger_health" />
+                        <EditText
+                            android:id="@+id/activity_add_habit_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/habit_name">
+
+                            <requestFocus />
+                        </EditText>
+                    </android.support.design.widget.TextInputLayout>
+
+                    <CheckBox
+                        android:id="@+id/activity_add_habit_time"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="@string/habit_danger_time" />
+
+                    <CheckBox
+                        android:id="@+id/activity_add_habit_money"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="@string/habit_danger_money" />
+
+                    <CheckBox
+                        android:id="@+id/activity_add_habit_health"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="@string/habit_danger_health" />
+
+                </LinearLayout>
+
 
             </LinearLayout>
 
         </ScrollView>
 
     </LinearLayout>
+
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/activity_habit_add_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:src="@drawable/ic_done_black_24dp"
+            android:layout_margin="16dp" />
+            <!--android:onClick="addHabitClicked"-->
+    </FrameLayout>
 
 </android.support.constraint.ConstraintLayout>
