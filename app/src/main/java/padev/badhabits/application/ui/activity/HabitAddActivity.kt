@@ -47,6 +47,8 @@ class HabitAddActivity: BaseActivity() {
             else otherLayout.visibility = View.GONE
         }
 
+        findViewById<RadioButton>(R.id.activity_habit_add_radio_button_smoke)?.isChecked = true
+
         val floatingButton= findViewById<FloatingActionButton>(R.id.activity_habit_add_fab)
 
         floatingButton.setOnClickListener {
@@ -121,7 +123,7 @@ class HabitAddActivity: BaseActivity() {
                 money = false
                 health = true
             }
-
+            finish()
         }
 
     }
